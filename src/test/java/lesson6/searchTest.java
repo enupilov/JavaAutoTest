@@ -1,6 +1,7 @@
 package lesson6;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,7 @@ public class searchTest extends AbstractTest {
     }
 
     @Test
+    @DisplayName("Тест 5. Проверка функции поиска.")
     void search(){
         Actions searchCheck = new Actions(getDriver());
 

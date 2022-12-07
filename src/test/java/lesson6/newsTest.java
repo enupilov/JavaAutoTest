@@ -1,6 +1,7 @@
 package lesson6;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class newsTest extends AbstractTest {
 
     }
     @Test
+    @DisplayName("Тест 3. Проверка новостной ленты.")
     void news(){
         news.click();
         Assertions.assertEquals("Новости", result);

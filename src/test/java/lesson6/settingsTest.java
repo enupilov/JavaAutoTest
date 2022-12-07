@@ -1,6 +1,7 @@
 package lesson6;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ public class settingsTest extends AbstractTest {
     }
 
     @Test
+    @DisplayName("Тест 6. Проверка дополнительных настроек.")
     void settings(){
         getDriver().findElement(By.id("dop")).click();
         Assertions.assertEquals("Дополнительно", result);

@@ -1,6 +1,7 @@
 package lesson6;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -48,6 +49,7 @@ public class linksTest extends AbstractTest {
     }
 
     @Test
+    @DisplayName("Тест 1. Проверка ссылок.")
     void links(){
         Actions linksCheck = new Actions(getDriver());
 

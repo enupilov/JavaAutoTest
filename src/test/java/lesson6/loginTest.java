@@ -1,6 +1,7 @@
 package lesson6;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ public class loginTest extends AbstractTest {
     }
 
     @Test
+    @DisplayName("Тест 2. Проверка входа на сайт.")
     void login() {
 
         Assertions.assertEquals("GB", result);
